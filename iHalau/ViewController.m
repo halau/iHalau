@@ -22,6 +22,7 @@
 
 - (void)viewDidUnload
 {
+    itemsTableView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +32,12 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)edit:(id)sender {
+}
+
+- (IBAction)add:(id)sender {
+}
+
+- (IBAction)refresh:(id)sender {
+}
 @end
