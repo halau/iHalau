@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		136CC07115CC91420097DB05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07015CC91420097DB05 /* UIKit.framework */; };
+		136CC07315CC91420097DB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07215CC91420097DB05 /* Foundation.framework */; };
+		136CC07515CC91420097DB05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07415CC91420097DB05 /* CoreGraphics.framework */; };
+		136CC07B15CC91420097DB05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 136CC07915CC91420097DB05 /* InfoPlist.strings */; };
+		136CC07D15CC91420097DB05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CC07C15CC91420097DB05 /* main.m */; };
+		136CC08115CC91420097DB05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CC08015CC91420097DB05 /* AppDelegate.m */; };
+		136CC08415CC91420097DB05 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 136CC08215CC91420097DB05 /* MainStoryboard.storyboard */; };
+		136CC08715CC91420097DB05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CC08615CC91420097DB05 /* ViewController.m */; };
+		136CC08F15CC91420097DB05 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC08E15CC91420097DB05 /* SenTestingKit.framework */; };
+		136CC09015CC91420097DB05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07015CC91420097DB05 /* UIKit.framework */; };
+		136CC09115CC91420097DB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07215CC91420097DB05 /* Foundation.framework */; };
+		136CC09915CC91420097DB05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 136CC09715CC91420097DB05 /* InfoPlist.strings */; };
+		136CC09C15CC91420097DB05 /* iHalauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CC09B15CC91420097DB05 /* iHalauTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		136CC09215CC91420097DB05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 136CC06315CC91420097DB05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 136CC06B15CC91420097DB05;
+			remoteInfo = iHalau;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		136CC06C15CC91420097DB05 /* iHalau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHalau.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		136CC07015CC91420097DB05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		136CC07215CC91420097DB05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		136CC07415CC91420097DB05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		136CC07815CC91420097DB05 /* iHalau-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHalau-Info.plist"; sourceTree = "<group>"; };
+		136CC07A15CC91420097DB05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		136CC07C15CC91420097DB05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		136CC07E15CC91420097DB05 /* iHalau-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHalau-Prefix.pch"; sourceTree = "<group>"; };
+		136CC07F15CC91420097DB05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		136CC08015CC91420097DB05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		136CC08315CC91420097DB05 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		136CC08515CC91420097DB05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		136CC08615CC91420097DB05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		136CC08D15CC91420097DB05 /* iHalauTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iHalauTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		136CC08E15CC91420097DB05 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		136CC09615CC91420097DB05 /* iHalauTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHalauTests-Info.plist"; sourceTree = "<group>"; };
+		136CC09815CC91420097DB05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		136CC09A15CC91420097DB05 /* iHalauTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHalauTests.h; sourceTree = "<group>"; };
+		136CC09B15CC91420097DB05 /* iHalauTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHalauTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		136CC06915CC91420097DB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CC07115CC91420097DB05 /* UIKit.framework in Frameworks */,
+				136CC07315CC91420097DB05 /* Foundation.framework in Frameworks */,
+				136CC07515CC91420097DB05 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		136CC08915CC91420097DB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CC08F15CC91420097DB05 /* SenTestingKit.framework in Frameworks */,
+				136CC09015CC91420097DB05 /* UIKit.framework in Frameworks */,
+				136CC09115CC91420097DB05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		136CC06115CC91420097DB05 = {
+			isa = PBXGroup;
+			children = (
+				136CC07615CC91420097DB05 /* iHalau */,
+				136CC09415CC91420097DB05 /* iHalauTests */,
+				136CC06F15CC91420097DB05 /* Frameworks */,
+				136CC06D15CC91420097DB05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		136CC06D15CC91420097DB05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				136CC06C15CC91420097DB05 /* iHalau.app */,
+				136CC08D15CC91420097DB05 /* iHalauTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		136CC06F15CC91420097DB05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				136CC07015CC91420097DB05 /* UIKit.framework */,
+				136CC07215CC91420097DB05 /* Foundation.framework */,
+				136CC07415CC91420097DB05 /* CoreGraphics.framework */,
+				136CC08E15CC91420097DB05 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		136CC07615CC91420097DB05 /* iHalau */ = {
+			isa = PBXGroup;
+			children = (
+				136CC07F15CC91420097DB05 /* AppDelegate.h */,
+				136CC08015CC91420097DB05 /* AppDelegate.m */,
+				136CC08215CC91420097DB05 /* MainStoryboard.storyboard */,
+				136CC08515CC91420097DB05 /* ViewController.h */,
+				136CC08615CC91420097DB05 /* ViewController.m */,
+				136CC07715CC91420097DB05 /* Supporting Files */,
+			);
+			path = iHalau;
+			sourceTree = "<group>";
+		};
+		136CC07715CC91420097DB05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				136CC07815CC91420097DB05 /* iHalau-Info.plist */,
+				136CC07915CC91420097DB05 /* InfoPlist.strings */,
+				136CC07C15CC91420097DB05 /* main.m */,
+				136CC07E15CC91420097DB05 /* iHalau-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		136CC09415CC91420097DB05 /* iHalauTests */ = {
+			isa = PBXGroup;
+			children = (
+				136CC09A15CC91420097DB05 /* iHalauTests.h */,
+				136CC09B15CC91420097DB05 /* iHalauTests.m */,
+				136CC09515CC91420097DB05 /* Supporting Files */,
+			);
+			path = iHalauTests;
+			sourceTree = "<group>";
+		};
+		136CC09515CC91420097DB05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				136CC09615CC91420097DB05 /* iHalauTests-Info.plist */,
+				136CC09715CC91420097DB05 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		136CC06B15CC91420097DB05 /* iHalau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136CC09F15CC91420097DB05 /* Build configuration list for PBXNativeTarget "iHalau" */;
+			buildPhases = (
+				136CC06815CC91420097DB05 /* Sources */,
+				136CC06915CC91420097DB05 /* Frameworks */,
+				136CC06A15CC91420097DB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iHalau;
+			productName = iHalau;
+			productReference = 136CC06C15CC91420097DB05 /* iHalau.app */;
+			productType = "com.apple.product-type.application";
+		};
+		136CC08C15CC91420097DB05 /* iHalauTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136CC0A215CC91420097DB05 /* Build configuration list for PBXNativeTarget "iHalauTests" */;
+			buildPhases = (
+				136CC08815CC91420097DB05 /* Sources */,
+				136CC08915CC91420097DB05 /* Frameworks */,
+				136CC08A15CC91420097DB05 /* Resources */,
+				136CC08B15CC91420097DB05 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				136CC09315CC91420097DB05 /* PBXTargetDependency */,
+			);
+			name = iHalauTests;
+			productName = iHalauTests;
+			productReference = 136CC08D15CC91420097DB05 /* iHalauTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		136CC06315CC91420097DB05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = mzp;
+			};
+			buildConfigurationList = 136CC06615CC91420097DB05 /* Build configuration list for PBXProject "iHalau" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 136CC06115CC91420097DB05;
+			productRefGroup = 136CC06D15CC91420097DB05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				136CC06B15CC91420097DB05 /* iHalau */,
+				136CC08C15CC91420097DB05 /* iHalauTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		136CC06A15CC91420097DB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CC07B15CC91420097DB05 /* InfoPlist.strings in Resources */,
+				136CC08415CC91420097DB05 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		136CC08A15CC91420097DB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CC09915CC91420097DB05 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		136CC08B15CC91420097DB05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		136CC06815CC91420097DB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CC07D15CC91420097DB05 /* main.m in Sources */,
+				136CC08115CC91420097DB05 /* AppDelegate.m in Sources */,
+				136CC08715CC91420097DB05 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		136CC08815CC91420097DB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CC09C15CC91420097DB05 /* iHalauTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		136CC09315CC91420097DB05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 136CC06B15CC91420097DB05 /* iHalau */;
+			targetProxy = 136CC09215CC91420097DB05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		136CC07915CC91420097DB05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				136CC07A15CC91420097DB05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		136CC08215CC91420097DB05 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				136CC08315CC91420097DB05 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		136CC09715CC91420097DB05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				136CC09815CC91420097DB05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		136CC09D15CC91420097DB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		136CC09E15CC91420097DB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		136CC0A015CC91420097DB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iHalau/iHalau-Prefix.pch";
+				INFOPLIST_FILE = "iHalau/iHalau-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		136CC0A115CC91420097DB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iHalau/iHalau-Prefix.pch";
+				INFOPLIST_FILE = "iHalau/iHalau-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		136CC0A315CC91420097DB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iHalau.app/iHalau";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iHalau/iHalau-Prefix.pch";
+				INFOPLIST_FILE = "iHalauTests/iHalauTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		136CC0A415CC91420097DB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iHalau.app/iHalau";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iHalau/iHalau-Prefix.pch";
+				INFOPLIST_FILE = "iHalauTests/iHalauTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		136CC06615CC91420097DB05 /* Build configuration list for PBXProject "iHalau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136CC09D15CC91420097DB05 /* Debug */,
+				136CC09E15CC91420097DB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		136CC09F15CC91420097DB05 /* Build configuration list for PBXNativeTarget "iHalau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136CC0A015CC91420097DB05 /* Debug */,
+				136CC0A115CC91420097DB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		136CC0A215CC91420097DB05 /* Build configuration list for PBXNativeTarget "iHalauTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136CC0A315CC91420097DB05 /* Debug */,
+				136CC0A415CC91420097DB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 136CC06315CC91420097DB05 /* Project object */;
+}
