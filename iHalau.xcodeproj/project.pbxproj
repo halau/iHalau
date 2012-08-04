@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1367B5E015CC9EFC0018855E /* hoby.png in Resources */ = {isa = PBXBuildFile; fileRef = 1367B5DF15CC9EFC0018855E /* hoby.png */; };
+		1367B5E315CCA0C00018855E /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 1367B5E215CCA0C00018855E /* Item.m */; };
 		136CC07115CC91420097DB05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07015CC91420097DB05 /* UIKit.framework */; };
 		136CC07315CC91420097DB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07215CC91420097DB05 /* Foundation.framework */; };
 		136CC07515CC91420097DB05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136CC07415CC91420097DB05 /* CoreGraphics.framework */; };
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1367B5DF15CC9EFC0018855E /* hoby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hoby.png; sourceTree = "<group>"; };
+		1367B5E115CCA0C00018855E /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		1367B5E215CCA0C00018855E /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		136CC06C15CC91420097DB05 /* iHalau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHalau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		136CC07015CC91420097DB05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		136CC07215CC91420097DB05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +119,8 @@
 				136CC07F15CC91420097DB05 /* AppDelegate.h */,
 				136CC08015CC91420097DB05 /* AppDelegate.m */,
 				136CC08215CC91420097DB05 /* MainStoryboard.storyboard */,
+				1367B5E115CCA0C00018855E /* Item.h */,
+				1367B5E215CCA0C00018855E /* Item.m */,
 				136CC08515CC91420097DB05 /* ViewController.h */,
 				136CC08615CC91420097DB05 /* ViewController.m */,
 				136CC07715CC91420097DB05 /* Supporting Files */,
@@ -124,6 +131,7 @@
 		136CC07715CC91420097DB05 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1367B5DF15CC9EFC0018855E /* hoby.png */,
 				136CC07815CC91420097DB05 /* iHalau-Info.plist */,
 				136CC07915CC91420097DB05 /* InfoPlist.strings */,
 				136CC07C15CC91420097DB05 /* main.m */,
@@ -224,6 +232,7 @@
 			files = (
 				136CC07B15CC91420097DB05 /* InfoPlist.strings in Resources */,
 				136CC08415CC91420097DB05 /* MainStoryboard.storyboard in Resources */,
+				1367B5E015CC9EFC0018855E /* hoby.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 				136CC07D15CC91420097DB05 /* main.m in Sources */,
 				136CC08115CC91420097DB05 /* AppDelegate.m in Sources */,
 				136CC08715CC91420097DB05 /* ViewController.m in Sources */,
+				1367B5E315CCA0C00018855E /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +444,7 @@
 				136CC0A115CC91420097DB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		136CC0A215CC91420097DB05 /* Build configuration list for PBXNativeTarget "iHalauTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +453,7 @@
 				136CC0A415CC91420097DB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

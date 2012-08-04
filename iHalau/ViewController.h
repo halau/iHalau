@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController<UITableViewDataSource> {
     __weak IBOutlet UITableView *itemsTableView;
+/*    NSArray* data;
+    NSMutableArray* dateSection;
+    NSCalendar* gregorian;*/
+    NSMutableArray* dateSection;
+    NSMutableDictionary* data;
 }
 - (IBAction)edit:(id)sender;
 - (IBAction)add:(id)sender;
