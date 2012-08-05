@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Halau;
 @interface ViewController : UIViewController<UITableViewDataSource> {
     __weak IBOutlet UITableView *itemsTableView;
-/*    NSArray* data;
-    NSMutableArray* dateSection;
-    NSCalendar* gregorian;*/
+    Halau* halau;
     NSMutableArray* dateSection;
     NSMutableDictionary* data;
 }

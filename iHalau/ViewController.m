@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Halau.h"
 #import "Item.h"
 
 @interface ViewController ()
@@ -15,18 +16,14 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)refresh
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    NSArray* items = [[NSArray alloc] initWithObjects:
-            [[Item alloc] initWith:@"なにか" category:@"コンビニ" location:@"コンビニ" price: 1000 createdAt:[NSDate dateWithTimeIntervalSinceNow:- 2 * 24 * 60 * 60]],
-            [[Item alloc] initWith:@"なにか" category:@"コンビニ" location:@"コンビニ" price: 980 createdAt:[NSDate dateWithTimeIntervalSinceNow:- 2 * 24 * 60 * 60]],
-            [[Item alloc] initWith:@"Maacbook Air" category:@"here" location:@"AppleStore" price: 98000 createdAt:[NSDate date]],
-            nil];
-    data = [[NSMutableDictionary alloc] init];
-    dateSection = [[NSMutableArray alloc] init];
+    [halau refresh];
+    [data removeAllObjects];
+    [dateSection removeAllObjects];
+
     NSCalendar* gregorian = [NSCalendar currentCalendar];
+    NSArray* items = [halau items];
 
     for (Item* item in items) {
         NSDateComponents *current = [gregorian components: NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit
@@ -41,6 +38,17 @@
             [dateSection addObject: current];
         }
     }
+    [itemsTableView reloadData];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    data = [[NSMutableDictionary alloc] init];
+    dateSection = [[NSMutableArray alloc] init];
+    halau = [[Halau alloc] initWithUrl:@"http://127.0.0.1:8001"];
+    [self refresh];
 }
 
 - (void)viewDidUnload
@@ -62,6 +70,7 @@
 }
 
 - (IBAction)refresh:(id)sender {
+    [self refresh];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
