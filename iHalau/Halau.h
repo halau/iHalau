@@ -18,4 +18,5 @@
 - (id)initWithUrl:(NSString*)aUrl;
 - (void)refresh;	
 - (void)addItem:(Item*)item;
+- (void)removeItem:(Item*)item;
 @end

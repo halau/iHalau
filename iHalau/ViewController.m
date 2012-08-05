@@ -17,11 +17,12 @@
 
 @implementation ViewController
 
-- (void)refresh
+- (void)refreshData
 {
+    // If section's number are changed, deleteRowsAtIndexPaths raises error.
+    // So, DONT upadte dateSection
     [halau refresh];
     [data removeAllObjects];
-    [dateSection removeAllObjects];
 
     NSCalendar* gregorian = [NSCalendar currentCalendar];
     NSArray* items = [halau items];
@@ -39,6 +40,12 @@
             [dateSection addObject: current];
         }
     }
+}
+
+- (void)refresh
+{
+    [dateSection removeAllObjects];
+    [self refreshData];
     [itemsTableView reloadData];
 }
 
@@ -55,6 +62,7 @@
 - (void)viewDidUnload
 {
     itemsTableView = nil;
+    editButton = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -66,13 +74,14 @@
 
 - (IBAction)edit:(id)sender {
 
-        if ([self isEditing]) {
-            [sender setTitle:@"Edit" forState:UIControlStateNormal];
-            [self setEditing:NO animated:YES];
-        } else {
-            [sender setTitle:@"Done" forState:UIControlStateNormal];
-            [self setEditing:YES animated:YES];
-        }
+    if( [itemsTableView isEditing]) {
+        [editButton setTitle: @"Edit"];
+        [itemsTableView setEditing:NO animated:YES];
+        [self refresh];
+    } else {
+        [editButton setTitle: @"Done"];
+        [itemsTableView setEditing:YES animated:YES];
+    }
 }
 
 - (IBAction)add:(id)sender {
@@ -131,5 +140,16 @@
 
     return cell;
 }
+
+- (void)tableView:(UITableView*)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ( editingStyle == UITableViewCellEditingStyleDelete ) {
+        Item* item = [[halau items] objectAtIndex: indexPath.row];
+        [halau removeItem:item];
+        [self refreshData];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject: indexPath] withRowAnimation:YES];
+    }
+}
+
 
 @end

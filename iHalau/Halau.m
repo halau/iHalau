@@ -76,4 +76,18 @@
     NSLog(@"%@", retval);
 }
 
+- (void)removeItem:(Item *)item
+{
+    [(NSMutableArray*)items removeObject:item];
+
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[self api:@"removeItem"]];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
+    request.HTTPMethod = @"POST";
+    request.HTTPBody   = [[NSString stringWithFormat:@"id=%d",
+                           item.objectID, nil]
+                          dataUsingEncoding:NSUTF8StringEncoding];
+    NSData* retval = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSLog(@"%@", retval);
+}
+
 @end

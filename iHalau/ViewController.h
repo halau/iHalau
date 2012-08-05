@@ -14,6 +14,7 @@
     Halau* halau;
     NSMutableArray* dateSection;
     NSMutableDictionary* data;
+    __weak IBOutlet UIBarButtonItem *editButton;
 }
 - (IBAction)edit:(id)sender;
 - (IBAction)add:(id)sender;
