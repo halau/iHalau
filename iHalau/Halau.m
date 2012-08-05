@@ -54,7 +54,8 @@
     for(NSDictionary* dict in json) {
         NSString* s = [dict objectForKey: @"createdAt"];
         NSDate* date = [self parse: s];
-        Item* item = [[Item alloc] initWith: (NSString*)[dict objectForKey: @"name"]
+        Item* item = [[Item alloc] initWith: [(NSNumber*)[dict objectForKey: @"id"]  intValue]
+                                       name: (NSString*)[dict objectForKey: @"name"]
                                    category: (NSString*)[dict objectForKey: @"category"]
                                    location: (NSString*)[dict objectForKey: @"location"]
                                       price: [(NSNumber*)[dict objectForKey: @"price"]  intValue]
@@ -65,13 +66,14 @@
 
 - (void)addItem:(Item*)item
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[self api:@"addItem.cgi"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[self api:@"addItem"]];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
     request.HTTPMethod = @"POST";
     request.HTTPBody   = [[NSString stringWithFormat:@"name=%@&location=%@&price=%d&category=%@&createdAt=%@",
                            item.name, item.location, item.price, item.categroy, item.createdAt, nil]
                           dataUsingEncoding:NSUTF8StringEncoding];
-    [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSData* retval = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSLog(@"%@", retval);
 }
 
 @end

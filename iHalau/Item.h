@@ -10,13 +10,15 @@
 
 @interface Item : NSObject
 
+@property (nonatomic) NSInteger objectID;
 @property (nonatomic, retain) NSString* categroy;
 @property (nonatomic, retain) NSString* name;
 @property (nonatomic, retain) NSString* location;
 @property (nonatomic) NSInteger price;
 @property (nonatomic, retain) NSDate* createdAt;
 
-- (id)initWith:(NSString*)name
+- (id)initWith:(NSInteger)aObjectID
+          name:(NSString*)name
       category:(NSString*)category
       location:(NSString*)location
          price:(NSInteger)price

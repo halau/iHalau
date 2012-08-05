@@ -48,7 +48,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     data = [[NSMutableDictionary alloc] init];
     dateSection = [[NSMutableArray alloc] init];
-    halau = [[Halau alloc] initWithUrl:@"http://127.0.0.1:8001"];
+    halau = [[Halau alloc] initWithUrl:@"http://127.0.0.1:4567"];
     [self refresh];
 }
 
@@ -65,6 +65,14 @@
 }
 
 - (IBAction)edit:(id)sender {
+
+        if ([self isEditing]) {
+            [sender setTitle:@"Edit" forState:UIControlStateNormal];
+            [self setEditing:NO animated:YES];
+        } else {
+            [sender setTitle:@"Done" forState:UIControlStateNormal];
+            [self setEditing:YES animated:YES];
+        }
 }
 
 - (IBAction)add:(id)sender {

@@ -21,7 +21,8 @@
 }
 
 - (IBAction)done:(id)sender {
-    Item* item = [[Item alloc] initWith: name.text
+    Item* item = [[Item alloc] initWith: -1
+                                   name: name.text
                                category: @"hoby"
                                location: location.text
                                   price: [price.text intValue]

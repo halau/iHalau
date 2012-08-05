@@ -9,15 +9,17 @@
 #import "Item.h"
 
 @implementation Item
-@synthesize categroy, name, location, price, createdAt;
+@synthesize objectID, categroy, name, location, price, createdAt;
 
-- (id)initWith:(NSString*)aName
+- (id)initWith:(NSInteger)aObjectID
+          name:(NSString*)aName
       category:(NSString*)aCategory
       location:(NSString*)aLocation
          price:(NSInteger)aPrice
      createdAt:(NSDate*)aCreatedAt
 {
     if( self = [super init] ) {
+        self.objectID = aObjectID;
         self.name = aName;
         self.categroy = aCategory;
         self.location = aLocation;
