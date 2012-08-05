@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ItemDetailViewController.h"
 #import "Halau.h"
 #import "Item.h"
 
@@ -67,6 +68,12 @@
 }
 
 - (IBAction)add:(id)sender {
+    ItemDetailViewController* detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemDetailViewController"];
+    detailViewController.onDone = ^(Item* item){
+        [halau addItem:item];
+        [self refresh];
+    };
+    [self presentModalViewController:detailViewController animated:YES];
 }
 
 - (IBAction)refresh:(id)sender {

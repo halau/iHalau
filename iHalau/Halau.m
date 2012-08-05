@@ -36,7 +36,7 @@
     NSLocale *enUSPOSIXLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     
     [rfc3339DateFormatter setLocale:enUSPOSIXLocale];
-    [rfc3339DateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
+    [rfc3339DateFormatter setDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm':'ss  '0000'"];
     [rfc3339DateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
     
     // Convert the RFC 3339 date time string to an NSDate.
@@ -51,7 +51,6 @@
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     NSArray *json = [parser objectWithData: jsonData];
 
-    //    NSLog(@"JSON dictionary=%@", [jsonDic description]);
     for(NSDictionary* dict in json) {
         NSString* s = [dict objectForKey: @"createdAt"];
         NSDate* date = [self parse: s];
@@ -62,6 +61,17 @@
                                   createdAt: date];
         [(NSMutableArray*)items addObject: item];
     }
+}
+
+- (void)addItem:(Item*)item
+{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[self api:@"addItem.cgi"]];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
+    request.HTTPMethod = @"POST";
+    request.HTTPBody   = [[NSString stringWithFormat:@"name=%@&location=%@&price=%d&category=%@&createdAt=%@",
+                           item.name, item.location, item.price, item.categroy, item.createdAt, nil]
+                          dataUsingEncoding:NSUTF8StringEncoding];
+    [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
 }
 
 @end

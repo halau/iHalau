@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class Item;
 @interface Halau : NSObject {
     NSString* url;
     NSArray*  items;
@@ -17,5 +17,5 @@
 
 - (id)initWithUrl:(NSString*)aUrl;
 - (void)refresh;	
-
+- (void)addItem:(Item*)item;
 @end
