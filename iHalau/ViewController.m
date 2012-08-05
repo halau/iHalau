@@ -55,7 +55,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     data = [[NSMutableDictionary alloc] init];
     dateSection = [[NSMutableArray alloc] init];
-    halau = [[Halau alloc] initWithUrl:@"http://127.0.0.1:4567"];
+    halau = [[Halau alloc] initWithUrl:@"http://agile-temple-7335.herokuapp.com"];
     [self refresh];
 }
 
