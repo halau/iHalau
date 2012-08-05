@@ -21,14 +21,14 @@
 }
 
 - (IBAction)done:(id)sender {
-    Item* item = [[Item alloc] initWith: -1
+    Item* aItem = [[Item alloc] initWith: -1
                                    name: name.text
                                category: @"hoby"
                                location: location.text
                                   price: [price.text intValue]
                               createdAt: [NSDate date]];
     if(self.onDone != nil) {
-        self.onDone(item);
+        self.onDone(aItem);
     }
     [self dismissModalViewControllerAnimated:YES];
 }
@@ -38,5 +38,23 @@
     location = nil;
     price = nil;
     [super viewDidUnload];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self update];
+}
+
+- (void)setItem:(Item *)aItem
+{
+    item = aItem;
+    [self update];
+}
+
+- (void)update {
+    name.text = item.name;
+    location.text = item.location;
+    price.text = [NSString stringWithFormat:@"%d", item.price,nil];
 }
 @end

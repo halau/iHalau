@@ -15,11 +15,13 @@ typedef void (^ItemListener)(Item*);
     __weak IBOutlet UITextField *name;
     __weak IBOutlet UITextField *location;
     __weak IBOutlet UITextField *price;
+    Item* item;
 }
 
 @property(nonatomic, copy) void (^onDone)(Item*);
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)done:(id)sender;
+- (void)setItem:(Item*)item;
 
 @end

@@ -151,5 +151,18 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Item* item = [[halau items] objectAtIndex:[indexPath row]];
+    ItemDetailViewController* viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemDetailViewController"];
+    [viewController setItem:item];
+    viewController.onDone = ^(Item* aItem) {
+        aItem.objectID = item.objectID;
+        [halau updateItem: aItem];
+        [self refresh];
+    };
+    [self presentViewController:viewController animated:TRUE completion:NULL];
+}
+
 
 @end

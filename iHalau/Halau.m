@@ -90,4 +90,16 @@
     NSLog(@"%@", retval);
 }
 
+- (void)updateItem:(Item *)item
+{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[self api:@"updateItem"]];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
+    request.HTTPMethod = @"POST";
+    request.HTTPBody   = [[NSString stringWithFormat:@"id=%d&name=%@&location=%@&price=%d&category=%@&createdAt=%@",
+                           item.objectID, item.name, item.location, item.price, item.categroy, item.createdAt, nil]
+                          dataUsingEncoding:NSUTF8StringEncoding];
+    NSData* retval = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSLog(@"%@", retval);
+}
+
 @end

@@ -58,6 +58,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="2" id="RMR-xe-vbo"/>
+                                    <outlet property="delegate" destination="2" id="taX-gM-KOW"/>
                                 </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" id="RJP-Dd-CHQ">
@@ -98,6 +99,7 @@
                     </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="104" y="58"/>
         </scene>
         <!--Item Detail View Controller-->
         <scene sceneID="DUZ-fc-qQx">

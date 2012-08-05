@@ -19,4 +19,5 @@
 - (void)refresh;	
 - (void)addItem:(Item*)item;
 - (void)removeItem:(Item*)item;
+- (void)updateItem:(Item*)item;
 @end

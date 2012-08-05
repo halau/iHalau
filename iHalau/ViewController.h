@@ -9,7 +9,7 @@
 
 
 @class Halau;
-@interface ViewController : UIViewController<UITableViewDataSource> {
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
     __weak IBOutlet UITableView *itemsTableView;
     Halau* halau;
     NSMutableArray* dateSection;
