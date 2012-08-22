@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ItemDetailViewController.h"
+#import "GraphViewController.h"
 #import "Halau.h"
 #import "Item.h"
 
@@ -95,6 +96,12 @@
 
 - (IBAction)refresh:(id)sender {
     [self refresh];
+}
+
+- (IBAction)showGraph:(id)sender {
+    GraphViewController* detailViewController =
+        [self.storyboard instantiateViewControllerWithIdentifier:@"GraphViewController"];
+    [self presentModalViewController:detailViewController animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

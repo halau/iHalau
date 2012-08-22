@@ -25,6 +25,7 @@
 		136CC09C15CC91420097DB05 /* iHalauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CC09B15CC91420097DB05 /* iHalauTests.m */; };
 		13812E4C15CEC72400FD787D /* 1344180077_checkout copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 13812E4B15CEC72400FD787D /* 1344180077_checkout copy.png */; };
 		13812E4F15CEC75200FD787D /* 1344180155_checkout.png in Resources */ = {isa = PBXBuildFile; fileRef = 13812E4E15CEC75200FD787D /* 1344180155_checkout.png */; };
+		139B108115E46C40003F345A /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139B108015E46C40003F345A /* GraphViewController.m */; };
 		13F3010415CDDE9200A91331 /* Halau.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F3010315CDDE9200A91331 /* Halau.m */; };
 		13F3011F15CDEE2100A91331 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F3010715CDEE2100A91331 /* NSObject+SBJson.m */; };
 		13F3012015CDEE2100A91331 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F3010A15CDEE2100A91331 /* SBJsonParser.m */; };
@@ -77,6 +78,8 @@
 		136CC09B15CC91420097DB05 /* iHalauTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHalauTests.m; sourceTree = "<group>"; };
 		13812E4B15CEC72400FD787D /* 1344180077_checkout copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1344180077_checkout copy.png"; sourceTree = "<group>"; };
 		13812E4E15CEC75200FD787D /* 1344180155_checkout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1344180155_checkout.png; sourceTree = "<group>"; };
+		139B107F15E46C40003F345A /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		139B108015E46C40003F345A /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
 		13F3010215CDDE9200A91331 /* Halau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Halau.h; sourceTree = "<group>"; };
 		13F3010315CDDE9200A91331 /* Halau.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Halau.m; sourceTree = "<group>"; };
 		13F3010615CDEE2100A91331 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 		1358A04C15CE632400F20276 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				139B107F15E46C40003F345A /* GraphViewController.h */,
+				139B108015E46C40003F345A /* GraphViewController.m */,
 				136CC08515CC91420097DB05 /* ViewController.h */,
 				136CC08615CC91420097DB05 /* ViewController.m */,
 				1358A04E15CE634000F20276 /* ItemDetailViewController.h */,
@@ -389,6 +394,7 @@
 				13F3012915CDEE2100A91331 /* SBJsonUTF8Stream.m in Sources */,
 				13F3012A15CDEE2100A91331 /* SBJsonWriter.m in Sources */,
 				1358A05015CE634000F20276 /* ItemDetailViewController.m in Sources */,
+				139B108115E46C40003F345A /* GraphViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

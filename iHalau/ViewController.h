@@ -19,5 +19,6 @@
 - (IBAction)edit:(id)sender;
 - (IBAction)add:(id)sender;
 - (IBAction)refresh:(id)sender;
+- (IBAction)showGraph:(id)sender;
 
 @end
